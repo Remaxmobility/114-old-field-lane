@@ -61,6 +61,16 @@
     .scrollx{overflow-x:auto;}
   }
   .scrollx{overflow-x:auto;}
+  @media (max-width:640px){
+    .feat-table thead{display:none;}
+    .feat-table, .feat-table tbody, .feat-table tr, .feat-table td{display:block;width:100%;}
+    .feat-table tr{margin-bottom:12px;border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:14px 16px;background:var(--color-surface);}
+    .feat-table tr:nth-child(odd) td{background:none !important;}
+    .feat-table td{padding:3px 0 !important;border:none;}
+    .feat-table td:first-child{font-size:11px;letter-spacing:var(--tracking-wider);text-transform:uppercase;color:var(--color-fg2);font-weight:700 !important;}
+    .feat-table td:nth-child(2){font-size:16.5px;font-weight:600 !important;color:var(--color-fg1);}
+    .feat-table td:nth-child(3){font-size:14px;color:var(--color-fg2);}
+  }
   th,td{text-align:left;padding:11px 14px;font-size:14.5px;vertical-align:top;}
   th{font-size:11px;letter-spacing:var(--tracking-wider);text-transform:uppercase;color:var(--color-fg2);font-weight:500;}
   tr:nth-child(odd) td{background:rgba(0,14,53,0.025);}
@@ -142,8 +152,7 @@
     <h2 class="section-title">Features &amp; Adjustments</h2>
     <p class="lede">Two features set this listing apart from every other closed sale in Port Stanley this year: the inground pool and the finished basement, both present on the same property.</p>
 
-    <div class="scrollx">
-    <table style="min-width:640px;font-size:15px;">
+    <table class="feat-table" style="font-size:15px;">
       <thead>
         <tr style="border-bottom:2px solid var(--color-bg-dark);">
           <th>Feature</th><th>114 Old Field Lane</th><th>Market impact &amp; adjustment</th>
@@ -159,7 +168,6 @@
         <tr><td style="font-weight:500;">Layout / flow</td><td>Front dining entry flow</td><td style="font-weight:700;">&minus;$25,000 to &minus;$35,000 functional obsolescence</td></tr>
       </tbody>
     </table>
-    </div>
   </div>
 </section>
 
