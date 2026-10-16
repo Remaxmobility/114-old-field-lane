@@ -1,0 +1,379 @@
+<title>114 Old Field Lane</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  /* Layout: stacked report sections alternating navy/cream bands, per the
+     RE/MAX Advantage design system — Gotham type, brand palette, 2px radius,
+     the logo and dynamic-slash motif from the firm's own asset library. */
+  :root{
+    --remax-red:#FF1200;
+    --remax-blue:#0043FF;
+    --remax-dark-red:#660000;
+    --remax-dark-blue:#000E35;
+    --remax-cream:#F7F5EE;
+    --remax-black:#000000;
+
+    --color-bg:#F7F5EE;
+    --color-bg-dark:#000E35;
+    --color-surface:#FFFFFF;
+    --color-surface-dark:#0A1A3A;
+    --color-fg1:#000000;
+    --color-fg2:#55544F;
+    --color-fg3:#A8A79E;
+    --color-fg-inverse:#F7F5EE;
+    --color-accent:#FF1200;
+    --color-border:#D4D2C8;
+    --color-divider:#EBEBDF;
+
+    --font-primary:'Arial',Helvetica,sans-serif;
+
+    --space-4:16px; --space-5:20px; --space-6:24px; --space-8:32px; --space-10:40px;
+    --radius-sm:2px; --radius-md:4px;
+    --shadow-sm:0 1px 3px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.06);
+    --tracking-tight:-0.02em; --tracking-wide:0.04em; --tracking-wider:0.08em; --tracking-widest:0.14em;
+    --leading-tight:1.1; --leading-snug:1.25; --leading-normal:1.5;
+    --text-xs:11px; --text-sm:13px; --text-base:16px; --text-md:18px; --text-lg:22px;
+    --text-xl:28px; --text-2xl:36px; --text-3xl:48px; --text-4xl:64px; --text-5xl:80px;
+    color-scheme: light;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:var(--color-bg);
+    color:var(--color-fg1);
+    font-family:var(--font-primary);
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  a{color:var(--remax-blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  h1,h2,h3{font-family:var(--font-primary); text-wrap:balance; margin:0;}
+  table{border-collapse:collapse;width:100%;}
+  img{max-width:100%;}
+  .wrap{max-width:1180px;margin:0 auto;}
+  .band{padding-left:max(20px, env(safe-area-inset-left,0px)); padding-right:max(20px, env(safe-area-inset-right,0px));}
+  .eyebrow{font-size:var(--text-xs,11px);font-weight:500;letter-spacing:var(--tracking-widest);text-transform:uppercase;margin:0 0 12px;}
+  .section-title{font-size:clamp(28px,3.6vw,40px);font-weight:900;text-transform:uppercase;letter-spacing:var(--tracking-tight,-0.02em);line-height:var(--leading-tight);margin:0 0 16px;}
+  .lede{font-size:16px;font-weight:400;color:var(--color-fg2);max-width:760px;line-height:var(--leading-normal);margin:0 0 36px;}
+  @media (max-width:720px){
+    .stack-mobile{flex-direction:column !important;}
+    .kpi-grid{grid-template-columns:1fr 1fr !important;}
+    .scrollx{overflow-x:auto;}
+  }
+  .scrollx{overflow-x:auto;}
+  th,td{text-align:left;padding:11px 14px;font-size:14.5px;vertical-align:top;}
+  th{font-size:11px;letter-spacing:var(--tracking-wider);text-transform:uppercase;color:var(--color-fg2);font-weight:500;}
+  tr:nth-child(odd) td{background:rgba(0,14,53,0.025);}
+  .cta-pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:var(--tracking-wide);text-transform:uppercase;border-radius:var(--radius-sm);padding:7px 14px;width:fit-content;}
+  .stat-strip{flex-wrap:wrap;row-gap:20px;}
+  .stat-col{flex:1;min-width:150px;padding:0 24px;border-left:1px solid rgba(247,245,238,.2);}
+  .stat-col:first-child{border-left:none;}
+  .stat-label{margin:0 0 7px;font-size:var(--text-xs);letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--color-fg3);}
+  .stat-value{margin:0;font-size:19px;font-weight:700;line-height:var(--leading-snug);white-space:nowrap;}
+  @media (max-width:640px){
+    .stat-col{min-width:44%;border-left:none !important;padding-left:0;}
+    .stat-value{white-space:normal;font-size:17px;}
+  }
+</style>
+
+<div class="band" style="background:var(--color-bg-dark);color:var(--color-fg-inverse);position:sticky;top:env(safe-area-inset-top,0px);z-index:50;border-bottom:1px solid rgba(247,245,238,0.14);">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;">
+    <img src="assets/logo-cream.png" alt="REMAX Advantage Realty" style="height:26px;width:auto;object-fit:contain;">
+    <nav style="display:none;gap:clamp(12px,2vw,26px);font-size:11.5px;letter-spacing:var(--tracking-wider);text-transform:uppercase;font-weight:500;color:var(--color-fg3);" id="navlinks">
+      <a href="#pricing" style="color:inherit;">Pricing</a>
+      <a href="#comps" style="color:inherit;">Comps</a>
+      <a href="#active" style="color:inherit;">Active</a>
+      <a href="#strategy" style="color:inherit;">Strategy</a>
+      <a href="#staging" style="color:inherit;">Staging</a>
+    </nav>
+    <span class="cta-pill" style="background:var(--remax-red);color:#fff;">519-932-0780</span>
+  </div>
+</div>
+<style>@media (min-width:760px){#navlinks{display:flex !important;}}</style>
+
+<!-- PRICING RECOMMENDATION -->
+<section id="pricing" class="band" style="background:var(--color-bg-dark);color:var(--color-fg-inverse);padding-block:clamp(52px,8vw,96px);">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--color-fg3);">Seller Pricing Strategy</p>
+    <h1 style="font-size:clamp(22px,2.9vw,30px);font-weight:500;margin:0 0 34px;color:var(--color-fg-inverse);">114 Old Field Lane, Central Elgin (Port Stanley), ON</h1>
+
+    <div style="display:flex;gap:clamp(24px,5vw,60px);align-items:flex-end;flex-wrap:wrap;margin-bottom:34px;" class="stack-mobile">
+      <div style="display:flex;align-items:flex-end;gap:14px;">
+        <div>
+          <p style="font-size:var(--text-sm);color:var(--color-fg3);margin:0 0 6px;text-transform:uppercase;letter-spacing:var(--tracking-wide);">Recommended list price</p>
+          <p style="font-size:clamp(44px,8vw,var(--text-5xl));font-weight:900;line-height:var(--leading-tight);margin:0;color:var(--color-fg-inverse);">$859,900</p>
+        </div>
+        <img src="assets/slash.png" alt="" style="height:clamp(38px,6vw,64px);width:auto;filter:invert(1) brightness(1.15);transform:translateY(-4px);">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:9px;padding-bottom:6px;">
+        <p style="margin:0;font-size:16px;">Target expected sale <strong style="font-weight:700;">$830,000 &ndash; $850,000</strong></p>
+        <p style="margin:0;font-size:16px;">Market environment <strong style="font-weight:700;">Buyer&rsquo;s market</strong></p>
+        <p class="cta-pill" style="color:var(--color-bg-dark);background:var(--remax-cream);">7.55 months inventory &middot; 96% sale-to-list</p>
+      </div>
+    </div>
+
+    <p style="font-size:16px;font-weight:400;color:var(--color-border);max-width:800px;line-height:var(--leading-normal);margin:0 0 40px;">Based strictly on 2026 closed sales in Port Stanley, listing at $859,900 positions the home to attract active buyers under the $900,000 threshold while targeting a realistic, defendable sale price of $830,000 to $850,000.</p>
+
+    <div style="display:flex;" class="stat-strip">
+      <div class="stat-col" style="padding-left:0;">
+        <p class="stat-label">Above-grade size</p>
+        <p class="stat-value">2,000&ndash;2,500 sq ft</p>
+      </div>
+      <div class="stat-col">
+        <p class="stat-label">Bed / bath</p>
+        <p class="stat-value">4+1 / 3</p>
+      </div>
+      <div class="stat-col">
+        <p class="stat-label">Garage</p>
+        <p class="stat-value">2.5-car, oversized</p>
+      </div>
+      <div class="stat-col">
+        <p class="stat-label">Lot</p>
+        <p class="stat-value">Corner &middot; 56.24&prime;&times;114.08&prime;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTY OVERVIEW & ADJUSTMENTS -->
+<section class="band" style="background:var(--color-bg);padding-block:clamp(52px,7.5vw,88px);">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--remax-red);">01 &mdash; Property Overview</p>
+    <h2 class="section-title">Features &amp; Adjustments</h2>
+    <p class="lede">Two features set this listing apart from every other closed sale in Port Stanley this year: the inground pool and the finished basement, both present on the same property.</p>
+
+    <div class="scrollx">
+    <table style="min-width:640px;font-size:15px;">
+      <thead>
+        <tr style="border-bottom:2px solid var(--color-bg-dark);">
+          <th>Feature</th><th>114 Old Field Lane</th><th>Market impact &amp; adjustment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="font-weight:500;">Above-grade size</td><td>2,000&ndash;2,500 sq ft, 2-storey</td><td>Generous living area vs. smaller area bungalows</td></tr>
+        <tr><td style="font-weight:500;">Bedrooms / baths</td><td>4+1 bedrooms / 3 bathrooms</td><td>Strong appeal for mid-to-large families</td></tr>
+        <tr><td style="font-weight:500;">Lower level</td><td>Fully finished basement</td><td style="font-weight:700;color:var(--remax-red);">+$45,000 vs. unfinished (182 Emery)</td></tr>
+        <tr><td style="font-weight:500;">Garage</td><td>Oversized 2.5-car</td><td style="font-weight:700;color:var(--remax-red);">+$5,000 vs. standard 2-car</td></tr>
+        <tr><td style="font-weight:500;">Lot type</td><td>Corner lot, 56.24&prime; &times; 114.08&prime;</td><td>High curb appeal; &minus;$35,000 vs. ravine</td></tr>
+        <tr><td style="font-weight:500;">Backyard amenity</td><td>Heated inground pool</td><td style="font-weight:700;color:var(--remax-red);">+$65,000 to +$75,000 feature premium</td></tr>
+        <tr><td style="font-weight:500;">Layout / flow</td><td>Front dining entry flow</td><td style="font-weight:700;">&minus;$25,000 to &minus;$35,000 functional obsolescence</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- 2026 CLOSED SALES -->
+<section id="comps" class="band" style="background:var(--color-surface);padding-block:clamp(52px,7.5vw,88px);border-top:1px solid var(--color-border);">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--remax-red);">02 &mdash; Closed Sales</p>
+    <h2 class="section-title">2026 Port Stanley Closed Sales</h2>
+    <p class="lede">Strictly 2026 closings &mdash; the most accurate reflection of current buyer willingness to pay. Two benchmarks bracket the subject: $860k for a finished basement with no pool, $890k for an inground pool. 114 Old Field has both.</p>
+
+    <div class="scrollx" style="margin-bottom:36px;">
+      <svg id="compsChart" viewBox="0 0 1000 400" style="width:100%;min-width:680px;height:auto;display:block;"></svg>
+    </div>
+
+    <div class="scrollx">
+    <table style="min-width:680px;font-size:14.5px;">
+      <thead>
+        <tr style="border-bottom:2px solid var(--color-bg-dark);">
+          <th>Address</th><th>Sale price</th><th>DOM</th><th>Comparison vs. subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="font-weight:500;">182 Emery St</td><td>$725,000</td><td>5</td><td>1,954 sq ft, unfinished basement, no pool</td></tr>
+        <tr><td style="font-weight:500;">208 Emery St</td><td>$799,000</td><td>26</td><td>1,485 sq ft bungalow &mdash; single-level baseline</td></tr>
+        <tr><td style="font-weight:500;">210 Cornell Dr</td><td>$825,000</td><td>9</td><td>Finished walkout, lake views, no pool</td></tr>
+        <tr><td style="font-weight:500;">436 Beamish St</td><td style="font-weight:700;">$860,000</td><td>53</td><td style="font-weight:500;">Finished basement benchmark &mdash; no pool</td></tr>
+        <tr><td style="font-weight:500;">35 Compass Tr</td><td style="font-weight:700;">$890,000</td><td>10</td><td style="font-weight:500;">Inground pool benchmark</td></tr>
+        <tr><td style="font-weight:500;">23 Lincoln&rsquo;s Cove</td><td>$1,060,000</td><td>32</td><td>1/3-acre ravine lot &mdash; premium tier</td></tr>
+        <tr><td style="font-weight:500;">148 Old Field Ln</td><td>$1,155,000</td><td>21</td><td>2,791 sq ft bungaloft, 4,000+ sq ft total</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div style="background:var(--color-bg);padding:24px 26px;margin-top:28px;border-radius:var(--radius-sm);">
+      <p style="margin:0;font-style:italic;font-size:15.5px;color:var(--color-fg1);line-height:var(--leading-normal);">114 Old Field offers both a finished basement and an inground pool, plus a 2.5-car garage. Accounting for the front entry layout adjustment (&minus;$30,000), fair market value lands squarely between $845,000 and $865,000.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVE & CONDITIONAL LISTINGS -->
+<section id="active" class="band" style="background:var(--color-bg-dark);color:var(--color-fg-inverse);padding-block:clamp(52px,7.5vw,88px);">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#5C8CFF;">03 &mdash; Active Market</p>
+    <h2 class="section-title" style="color:var(--color-fg-inverse);">Active &amp; Conditional Listings</h2>
+    <p class="lede" style="color:var(--color-border);">In a 7.55-month inventory buyer&rsquo;s market, asking prices are negotiable. Applying the regional 96.0% sale-to-list ratio shows what these listings are actually worth to a buyer.</p>
+
+    <div class="scrollx">
+    <table style="min-width:680px;font-size:14.5px;">
+      <thead>
+        <tr style="border-bottom:2px solid rgba(247,245,238,.3);">
+          <th style="color:var(--color-fg3);">Listing</th><th style="color:var(--color-fg3);">Asking</th><th style="color:var(--color-fg3);">Est. closing (96%)</th><th style="color:var(--color-fg3);">Comparison vs. subject</th>
+        </tr>
+      </thead>
+      <tbody style="color:var(--color-fg-inverse);">
+        <tr style="border-bottom:1px solid rgba(247,245,238,.12);"><td style="font-weight:500;">392 Larry St</td><td>$859,900</td><td style="font-weight:700;">~$825,500</td><td style="color:var(--color-border);">Standard detached, no pool</td></tr>
+        <tr style="border-bottom:1px solid rgba(247,245,238,.12);"><td style="font-weight:500;">41 Compass Tr</td><td>$874,900</td><td style="font-weight:700;">~$839,900</td><td style="color:var(--color-border);">2,212 sq ft, no pool &mdash; 104 DOM</td></tr>
+        <tr style="border-bottom:1px solid rgba(247,245,238,.12);"><td style="font-weight:500;">45 Compass Tr</td><td>$979,900</td><td style="font-weight:700;color:var(--remax-red);">~$930,000 &mdash; unsold</td><td style="color:var(--color-border);">Unfinished basement &mdash; 81 DOM, stagnant</td></tr>
+        <tr><td style="font-weight:500;">20 Ensley Pl</td><td>$1,049,900</td><td style="font-weight:700;">~$980,000</td><td style="color:var(--color-border);">Ravine walkout, no pool &mdash; 57 DOM</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING STRATEGY -->
+<section id="strategy" class="band" style="background:var(--color-bg);padding-block:clamp(52px,7.5vw,88px);">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--remax-red);">04 &mdash; Strategy</p>
+    <h2 class="section-title">Pricing Strategy &amp; Expected Outcomes</h2>
+    <p class="lede">Pricing is about positioning the home where buyers are actively looking, with realistic room for standard negotiation &mdash; not artificial offer dates or over-promising bidding scenarios.</p>
+
+    <div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:32px;" class="stack-mobile">
+      <div style="flex:1;min-width:220px;background:var(--color-surface);padding:24px;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);">
+        <p style="margin:0 0 10px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:var(--tracking-wide);color:var(--color-fg2);">Recommended list price</p>
+        <p style="margin:0;font-size:26px;font-weight:700;">$859,900</p>
+        <p style="margin:10px 0 0;font-size:14px;font-weight:400;color:var(--color-fg2);">Captures buyers searching under $900,000; undercuts stagnant actives</p>
+      </div>
+      <div style="flex:1;min-width:220px;background:var(--color-surface);padding:24px;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);">
+        <p style="margin:0 0 10px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:var(--tracking-wide);color:var(--color-fg2);">Negotiation margin</p>
+        <p style="margin:0;font-size:26px;font-weight:700;">3.0% &ndash; 3.5%</p>
+        <p style="margin:10px 0 0;font-size:14px;font-weight:400;color:var(--color-fg2);">Standard Elgin County detached-home buffer</p>
+      </div>
+      <div style="flex:1;min-width:220px;background:var(--color-surface);padding:24px;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);">
+        <p style="margin:0 0 10px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:var(--tracking-wide);color:var(--color-fg2);">Projected sale range</p>
+        <p style="margin:0;font-size:26px;font-weight:700;">$830,000 &ndash; $850,000</p>
+        <p style="margin:10px 0 0;font-size:14px;font-weight:400;color:var(--color-fg2);">Aligns with 2026 solds minus the layout adjustment</p>
+      </div>
+    </div>
+
+    <div style="background:var(--color-bg-dark);color:var(--color-fg-inverse);padding:26px 30px;border-radius:var(--radius-sm);">
+      <p style="margin:0;font-size:15.5px;font-weight:400;line-height:var(--leading-normal);">This strategy does not rely on artificial offer dates or over-promising bidding scenarios. It is a straightforward, transparent pricing strategy designed to attract serious buyers, generate physical showings, and secure a firm, defendable offer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STAGING -->
+<section id="staging" class="band" style="background:var(--color-surface);padding-block:clamp(52px,7.5vw,88px);border-top:1px solid var(--color-border);">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--remax-dark-red);">05 &mdash; Presentation</p>
+    <h2 class="section-title">Staging &amp; Showing Recommendations</h2>
+    <p class="lede">Four moves to support the $859,900 list price when buyers walk through the door.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;" class="kpi-grid">
+      <div style="background:var(--color-bg);padding:24px;border-radius:var(--radius-sm);">
+        <p style="margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--remax-dark-red);">Re-stage the front entry</p>
+        <p style="margin:0;font-size:15px;font-weight:400;line-height:var(--leading-normal);color:var(--color-fg1);">Transition the formal dining setup into a welcoming sitting lounge, reading nook, or home office den &mdash; removes the visual barrier at the front door and improves flow.</p>
+      </div>
+      <div style="background:var(--color-bg);padding:24px;border-radius:var(--radius-sm);">
+        <p style="margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--remax-dark-red);">Highlight the garage</p>
+        <p style="margin:0;font-size:15px;font-weight:400;line-height:var(--leading-normal);color:var(--color-fg1);">Emphasize the oversized 2.5-car depth and width as functional workshop space or storage for lawn and recreational equipment.</p>
+      </div>
+      <div style="background:var(--color-bg);padding:24px;border-radius:var(--radius-sm);">
+        <p style="margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--remax-dark-red);">Lead with outdoor living</p>
+        <p style="margin:0;font-size:15px;font-weight:400;line-height:var(--leading-normal);color:var(--color-fg1);">Focus main marketing imagery on the inground pool, covered deck, and fenced yard &mdash; the home&rsquo;s strongest differentiator this year.</p>
+      </div>
+      <div style="background:var(--color-bg);padding:24px;border-radius:var(--radius-sm);">
+        <p style="margin:0 0 8px;font-size:12px;font-weight:700;letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--remax-dark-red);">Provide floor plans</p>
+        <p style="margin:0;font-size:15px;font-weight:400;line-height:var(--leading-normal);color:var(--color-fg1);">Include a clear 2D floor plan in marketing materials so buyers understand the layout before viewing in person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="band" style="background:var(--color-bg-dark);color:var(--color-fg-inverse);padding-block:clamp(36px,6vw,52px);">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+    <div>
+      <img src="assets/logo-cream.png" alt="REMAX Advantage Realty" style="height:28px;width:auto;object-fit:contain;margin-bottom:16px;">
+      <p style="margin:0 0 4px;font-size:14px;font-weight:500;">Jason Froude, REALTOR&reg;</p>
+      <p style="margin:0 0 4px;font-size:14px;font-weight:400;color:var(--color-border);">RE/MAX Advantage Realty Ltd., Brokerage</p>
+      <p style="margin:0 0 4px;font-size:14px;font-weight:400;color:var(--color-border);">151 Pine Valley Blvd., London ON N6K 3T6</p>
+      <p style="margin:0;font-size:14px;font-weight:400;">519-932-0780</p>
+    </div>
+    <div style="text-align:right;max-width:360px;">
+      <p style="margin:0;font-size:11px;font-weight:300;color:var(--color-fg3);line-height:var(--leading-normal);">Each Office Independently Owned and Operated.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function draw(){
+    var svg = document.getElementById('compsChart');
+    if(!svg) return;
+    var ink = '#3A3935';
+    var muted = '#55544F';
+    var grid = 'rgba(0,14,53,.10)';
+    var navy = '#000E35';
+    var red = '#FF1200';
+    var mutedBar = '#D4D2C8';
+
+    var data = [
+      {label:'182 Emery St', price:725000, note:''},
+      {label:'208 Emery St', price:799000, note:''},
+      {label:'210 Cornell Dr', price:825000, note:''},
+      {label:'436 Beamish St', price:860000, note:'Finished basement benchmark'},
+      {label:'35 Compass Tr', price:890000, note:'Inground pool benchmark'},
+      {label:'23 Lincoln’s Cove', price:1060000, note:''},
+      {label:'148 Old Field Ln', price:1155000, note:''}
+    ];
+
+    var W = 1000, H = 400, ML = 190, MR = 40, MT = 16, MB = 16;
+    var rowH = (H - MT - MB) / data.length;
+    var min = 650000, max = 1200000;
+    function x(v){ return ML + (W - ML - MR) * (v - min) / (max - min); }
+
+    var subjMin = 845000, subjMax = 865000;
+
+    var svgns = 'http://www.w3.org/2000/svg';
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+
+    function el(tag, attrs){
+      var e = document.createElementNS(svgns, tag);
+      for(var k in attrs) e.setAttribute(k, attrs[k]);
+      return e;
+    }
+
+    var ticks = [700000,800000,900000,1000000,1100000,1200000];
+    ticks.forEach(function(t){
+      var gx = x(t);
+      svg.appendChild(el('line', {x1:gx, x2:gx, y1:MT, y2:H-MB, stroke:grid, 'stroke-width':1}));
+      var tl = el('text', {x:gx, y:H-2, 'font-size':11, fill:muted, 'text-anchor':'middle', 'font-family':'Gotham, Arial, sans-serif'});
+      tl.textContent = '$' + Math.round(t/1000) + 'k';
+      svg.appendChild(tl);
+    });
+
+    var bandX = x(subjMin), bandW = x(subjMax) - x(subjMin);
+    svg.appendChild(el('rect', {x:bandX, y:MT, width:bandW, height:H-MT-MB, fill:red, opacity:0.12}));
+    var bandLabel = el('text', {x:(bandX+bandW/2), y:MT+14, 'font-size':11, fill:red, 'text-anchor':'middle', 'font-weight':700, 'font-family':'Gotham, Arial, sans-serif'});
+    bandLabel.textContent = 'Subject range';
+    svg.appendChild(bandLabel);
+
+    data.forEach(function(d, i){
+      var y = MT + i * rowH + rowH * 0.22;
+      var barH = rowH * 0.56;
+      var bx = x(min);
+      var bw = x(d.price) - x(min);
+      var isBenchmark = d.note !== '';
+      svg.appendChild(el('rect', {x:bx, y:y, width:bw, height:barH, fill: isBenchmark ? navy : mutedBar, rx:1}));
+
+      var lbl = el('text', {x:ML-12, y:y+barH/2+4, 'font-size':13, fill:ink, 'text-anchor':'end', 'font-weight': isBenchmark ? 700 : 500, 'font-family':'Gotham, Arial, sans-serif'});
+      lbl.textContent = d.label;
+      svg.appendChild(lbl);
+
+      var val = el('text', {x:x(d.price)+8, y:y+barH/2+4, 'font-size':13, fill:ink, 'font-weight':700, 'font-family':'Gotham, Arial, sans-serif'});
+      val.textContent = '$' + d.price.toLocaleString();
+      svg.appendChild(val);
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', draw);
+  } else {
+    draw();
+  }
+})();
+</script>
